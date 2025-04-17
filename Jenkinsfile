@@ -27,7 +27,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
                     sh """
-                        sonar-scanner \
+                        /usr/local/sonar-scanner/bin/sonar-scanner \
                             -Dsonar.projectKey=devops-demo \
                             -Dsonar.sources=src \
                             -Dsonar.projectName=DevOps-Demo \
